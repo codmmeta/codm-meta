@@ -1,0 +1,18 @@
+[
+  {
+    "id": "meta-drh",
+    "weaponId": "drh",
+    "name": "DR-H Mid-range Beam",
+    "class": "AR",
+    "tier": "S",
+    "attachments": ["Monolithic Suppressor", "OWC Ranger Barrel", "Foregrip"]
+  },
+  {
+    "id": "meta-c9",
+    "weaponId": "c9",
+    "name": "C9 Close-range Aggro",
+    "class": "SMG",
+    "tier": "S",
+    "attachments": ["Light Barrel", "No Stock", "Laser OWC Tactical"]
+  }
+]
