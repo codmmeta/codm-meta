@@ -13,8 +13,10 @@
     .container { max-width:1300px; margin:auto; padding:20px; }
     .weapon-card { background: linear-gradient(145deg,#161616,#0f0f0f); padding:25px; margin:20px 0; border-radius:14px; border:1px solid #2a2a2a; box-shadow:0 0 15px rgba(0,0,0,0.6); transition:transform .2s, box-shadow .2s; }
     .weapon-card:hover { transform:scale(1.03); box-shadow:0 0 25px rgba(0,122,255,0.4); }
-    .tag { background:#1e1e1e; border:1px solid #333; padding:6px 12px; border-radius:8px; }
+    .tag { background:#1e1e1e; border:1px solid #333; padding:6px 12px; border-radius:8px; margin-right:6px; display:inline-block; }
     #searchBar { width:100%; padding:12px; border-radius:10px; border:none; margin-bottom:25px; font-size:18px; background:#1b1b1b; color:#fff; }
+    h2 { margin:0 0 12px 0; display:flex; align-items:center; }
+    ul.setup { margin:0; padding-left:20px; }
   </style>
 </head>
 <body>
@@ -32,24 +34,53 @@
 
   <div class="container">
     <input id="searchBar" placeholder="Rechercher une arme...">
-    
-    <h1 id="tierlist">Tier List – Saison Actuelle</h1>
-    <p>Classement complet des armes CODM.</p>
 
-    <h1 id="mj" style="margin-top:70px;">Meilleures Classes MJ</h1>
-    <p>Les meilleures armes optimisées pour le multijoueur.</p>
+    <!-- EXEMPLE D'ARMES -->
+    <div class="weapon-card" data-modes="MJ BR Ranked">
+      <h2>AK-47 <span class="tag">AR</span> <span class="tag">S-Tier</span></h2>
+      <ul class="setup">
+        <li>Muzzle: Monolithic Suppressor</li>
+        <li>Barrel: OWC Ranger</li>
+        <li>Laser: OWC Laser Tactical</li>
+        <li>Underbarrel: Merc Foregrip</li>
+        <li>Ammunition: 40 Round Mag</li>
+      </ul>
+    </div>
 
-    <h1 id="br" style="margin-top:70px;">Meilleures Classes Battle Royale</h1>
-    <p>Armes optimisées pour longue portée, stabilité et mobilité BR.</p>
+    <div class="weapon-card" data-modes="MJ BR Ranked">
+      <h2>AK-117 <span class="tag">AR</span> <span class="tag">A-Tier</span></h2>
+      <ul class="setup">
+        <li>Muzzle: OWC Light Suppressor</li>
+        <li>Barrel: OWC Marksman</li>
+        <li>Laser: OWC Laser Tactical</li>
+        <li>Underbarrel: Ranger Foregrip</li>
+        <li>Ammunition: 40 Round Mag</li>
+      </ul>
+    </div>
 
-    <h1 id="ranked" style="margin-top:70px;">Meilleures Classes Ranked</h1>
-    <p>Setup optimisés pour le mode classé.</p>
+    <div class="weapon-card" data-modes="MJ BR Ranked">
+      <h2>MSMC <span class="tag">SMG</span> <span class="tag">S-Tier</span></h2>
+      <ul class="setup">
+        <li>Muzzle: Monolithic Suppressor</li>
+        <li>Barrel: OWC Ranger</li>
+        <li>Laser: OWC Laser Tactical</li>
+        <li>Underbarrel: Merc Foregrip</li>
+        <li>Ammunition: 32 Round Mag</li>
+      </ul>
+    </div>
 
-    <h1 id="stats" style="margin-top:70px;">Statistiques des Armes</h1>
-    <p>Dégâts, portée, cadence, mobilité (à venir).</p>
+    <div class="weapon-card" data-modes="MJ BR Ranked">
+      <h2>DL Q33 <span class="tag">Sniper</span> <span class="tag">S-Tier</span></h2>
+      <ul class="setup">
+        <li>Muzzle: Monolithic Suppressor</li>
+        <li>Barrel: OWC Ranger</li>
+        <li>Laser: MIP Laser 5mW</li>
+        <li>Rear Grip: Stippled Grip Tape</li>
+      </ul>
+    </div>
 
-    <h1 id="filtres" style="margin-top:70px;">Filtres</h1>
-    <p>Filtrer les armes par type, mode de jeu, tier, et saison (à venir).</p>
+    <!-- TU PEUX AJOUTER TOUTES LES AUTRES ARMES ICI DE LA MEME MANIERE -->
+
   </div>
 
   <footer style="text-align:center;padding:20px 10px;margin-top:40px;border-top:1px solid #222;color:#8c8c8c;">
