@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CODM Meta : Découvrez toutes les armes de Call of Duty Mobile avec leurs meilleures classes et accessoires pour MJ, BR et Ranked. Filtrez, recherchez et optimisez vos setups gratuitement, avec design moderne et interactif.">
+  <title>CODM Meta - Meilleures Armes et Classes</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; margin: 0; }
+    header { padding: 25px; background:#0f0f0f; border-bottom:2px solid #1f1f1f; text-align:center; font-size:32px; font-weight:bold; letter-spacing:1px; }
+    nav a { text-decoration:none; color:#4da6ff; font-size:18px; margin:0 12px; transition:0.2s; }
+    nav a:hover { color:#80c1ff; }
+    .container { max-width:1300px; margin:auto; padding:20px; }
+    .weapon-card { background: linear-gradient(145deg,#161616,#0f0f0f); padding:25px; margin:20px 0; border-radius:14px; border:1px solid #2a2a2a; box-shadow:0 0 15px rgba(0,0,0,0.6); transition:transform .2s, box-shadow .2s; }
+    .weapon-card:hover { transform:scale(1.03); box-shadow:0 0 25px rgba(0,122,255,0.4); }
+    .tag { background:#1e1e1e; border:1px solid #333; padding:6px 12px; border-radius:8px; }
+    #searchBar { width:100%; padding:12px; border-radius:10px; border:none; margin-bottom:25px; font-size:18px; background:#1b1b1b; color:#fff; }
+  </style>
+</head>
+<body>
+  <header>
+    CODM META – Meilleures Armes & Classes
+    <nav style="margin-top:15px;">
+      <a href="#tierlist" style="color:#0af; margin:0 10px;">Tier List</a>
+      <a href="#mj" style="color:#0af; margin:0 10px;">MJ</a>
+      <a href="#br" style="color:#0af; margin:0 10px;">BR</a>
+      <a href="#ranked" style="color:#0af; margin:0 10px;">Ranked</a>
+      <a href="#stats" style="color:#0af; margin:0 10px;">Stats</a>
+      <a href="#filtres" style="color:#0af; margin:0 10px;">Filtres</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <input id="searchBar" placeholder="Rechercher une arme...">
+    
+    <h1 id="tierlist">Tier List – Saison Actuelle</h1>
+    <p>Classement complet des armes CODM.</p>
+
+    <h1 id="mj" style="margin-top:70px;">Meilleures Classes MJ</h1>
+    <p>Les meilleures armes optimisées pour le multijoueur.</p>
+
+    <h1 id="br" style="margin-top:70px;">Meilleures Classes Battle Royale</h1>
+    <p>Armes optimisées pour longue portée, stabilité et mobilité BR.</p>
+
+    <h1 id="ranked" style="margin-top:70px;">Meilleures Classes Ranked</h1>
+    <p>Setup optimisés pour le mode classé.</p>
+
+    <h1 id="stats" style="margin-top:70px;">Statistiques des Armes</h1>
+    <p>Dégâts, portée, cadence, mobilité (à venir).</p>
+
+    <h1 id="filtres" style="margin-top:70px;">Filtres</h1>
+    <p>Filtrer les armes par type, mode de jeu, tier, et saison (à venir).</p>
+  </div>
+
+  <footer style="text-align:center;padding:20px 10px;margin-top:40px;border-top:1px solid #222;color:#8c8c8c;">
+    CODM Meta - Généré automatiquement • Toutes les classes sont optimisées pour MJ / BR / Ranked
+  </footer>
+
+  <script>
+    const searchBar = document.getElementById('searchBar');
+    searchBar.addEventListener('input', () => {
+      const value = searchBar.value.toLowerCase();
+      document.querySelectorAll('.weapon-card').forEach(card => {
+        card.style.display = card.innerText.toLowerCase().includes(value) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
